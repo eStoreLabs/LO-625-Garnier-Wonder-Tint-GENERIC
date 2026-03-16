@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./styles/swiper.css">
   <link rel="stylesheet" href="./styles/style.css">
 </head>
 
@@ -86,13 +85,14 @@
               </div>
             </div>
           </div> -->
-          <div class="es-benefits__mobile">
+          <div class="es-benefits__mobile"
+               style="background: url(./images/benefits-container-m.png) no-repeat center / cover; min-height: 400px;">
             <div class="es-benefits__mobile-wrapper">
               <div class="es-benefits__mobile-images--left">
                 <ul class="es-benefits__list es-benefits__list--mobile">
-                  <li class="es-benefits__list-item">Natychmiast nawilża i rozświetla skórę</li>
-                  <li class="es-benefits__list-item">Redukuje widoczność przebarwień</li>
-                  <li class="es-benefits__list-item">Zapewnia bardzo wysoką ochronę SPF 50+</li>
+                  <li class="es-benefits__list-item">Natychmiast nawilża <br> i rozświetla skórę</li>
+                  <li class="es-benefits__list-item">Redukuje widoczność <br> przebarwień</li>
+                  <li class="es-benefits__list-item">Zapewnia bardzo <br> wysoką ochronę <br> SPF 50+</li>
                 </ul>
               </div>
             </div>
@@ -154,29 +154,91 @@
             <img src="./images/before.png"
                  alt=""
                  class="es-ba__before">
-            <p class="es-ba__left-group-title">Przed</p>
+            <div class="es-ba__ba-border">
+              <div class="es-ba__group">
+                <img src="./images/ba-line.png"
+                     alt=""
+                     class="es-ba__ba-img">
+                <p class="es-ba__left-group-title">Przed</p>
+              </div>
+            </div>
           </div>
           <div class="es-ba__left-group">
             <img src="./images/after.png"
                  alt=""
                  class="es-ba__after">
-            <p class="es-ba__left-group-title">Po</p>
+            <div class="es-ba__ba-border">
+              <div class="es-ba__group">
+                <img src="./images/ba-line.png"
+                     alt=""
+                     class="es-ba__ba-img">
+                <p class="es-ba__left-group-title es-ba__left-group-title--2">Po</p>
+              </div>
+
+            </div>
           </div>
         </div>
         <div class="es-ba__right">
           <p class="es-ba__text">
             Koloryt jest bardziej wyrównany,
-            a skóra odczuwalnie nawilżona przez cały dzień2
+            a&nbsp;skóra odczuwalnie nawilżona przez&nbsp;cały&nbsp;dzień<sup>2</sup>
           </p>
         </div>
       </div>
 
-      <div class="es-effects">
+      <div class="es-effects"
+           style="background: url(./images/es-effects-mobile.png) no-repeat center / cover">
+        <p class="es-section-title es-effects__title">
+          <span class="es-section-title--highlight">JAK STOSOWAĆ?</span>
+        </p>
 
-        <div class="es-effects__container">
-          <p class="es-section-title">
-            <span class="es-section-title--highlight">JAK STOSOWAĆ?</span>
-          </p>
+        <div class="es-effects__desktop-bg">
+          <img src="./images/effects.png"
+               alt="">
+        </div>
+        <div class="es-effects__container es-effects__container--mobile">
+
+          <div class="es-effects__wrapper">
+            <div class="es-effects__item">
+              <img src="./images/benefits-icon-1.png"
+                   alt=""
+                   class="es-effects__icon">
+              <p class="es-effects__desc">
+                Wstrząśnij przed użyciem
+              </p>
+            </div>
+            <div class="es-effects__item">
+              <img src="./images/benefits-icon-2.png"
+                   alt=""
+                   class="es-effects__icon">
+              <p class="es-effects__desc">
+                Stosuj na <br>oczyszczoną skórę<br>
+                twarzy po <br>nałożeniu kremu <br>nawilżającego
+              </p>
+            </div>
+            <div class="es-effects__item">
+              <img src="./images/benefits-icon-3.png"
+                   alt=""
+                   class="es-effects__icon">
+              <p class="es-effects__desc">
+                W razie potrzeby,<br> reaplikuj <br>w ciągu dnia
+              </p>
+            </div>
+          </div>
+          <div class="es-effects__ba">
+            <!-- <img src="./images/women-serum.jpg"
+                         alt=""
+                         class="es-effects__img"> -->
+          </div>
+
+          <div class="es-effects__mobile-bg-face">
+            <img src="./images/effects-woman.png"
+                 alt="">
+          </div>
+        </div>
+
+        <div class="es-effects__container es-effects__container--desktop">
+
           <div class="es-effects__wrapper">
             <div class="es-effects__item">
               <img src="./images/benefits-icon-1.png"
@@ -209,10 +271,7 @@
                  alt=""
                  class="es-effects__img"> -->
           </div>
-          <div class="es-effects__desktop-bg">
-            <img src="./images/effects.png"
-                 alt="">
-          </div>
+
           <div class="es-effects__desktop-bg-face">
             <img src="./images/effects-woman.png"
                  alt="">
@@ -221,226 +280,145 @@
       </div>
 
 
-      <!-- <div class="es-formula">
-        <p class="es-section-title">
-          Składniki aktywne <span class="es-section-title--highlight">w serum na przebarwienia</span>
+
+
+      <div class="es-garnier-logos">
+        <img src="./images/logos.png"
+             alt=""
+             class="es-garnier-logos__img">
+      </div>
+
+      <div class="es-slider es-slider--mobile"
+           style="background: url(./images/mobile-cross-bg.png) no-repeat; background-position: center -45px; background-size: cover">
+        <p class="es-section-title es-section-title--big es-slider__title">
+          <span class="es-section-title--highlight">Stwórz swoją <br>rutynę pielęgnacyjną</span>
         </p>
-
-        <div class="es-formula__container">
-          <div class="es-formula__wrapper">
-            <img src="./images/ingr.png"
-                 alt=""
-                 class="es-formula__img">
-
-            <div class="es-mobile">
-              <div class="es-formula__item es-formula__item--1">
-                <p class="es-formula__item--title">MELASYL™</p>
-                <img src="./images/line-1.png"
-                     alt=""
-                     class="es-formula__line es-formula__line--1">
-              </div>
-              <div class="es-formula__item es-formula__item--2">
-                <p class="es-formula__item--title">KWAS<br>SALICYLOWY</p>
-                <img src="./images/line-2.png"
-                     alt=""
-                     class="es-formula__line es-formula__line--2">
-              </div>
-              <div class="es-formula__item es-formula__item--3">
-                <p class="es-formula__item--title">NIACYNAMID</p>
-                <img src="./images/line-3.png"
-                     alt=""
-                     class="es-formula__line es-formula__line--3">
-              </div>
-              <div class="es-formula__item es-formula__item--4">
-                <p class="es-formula__item--title">WITAMINA C*</p>
-                <img src="./images/line-4.png"
-                     alt=""
-                     class="es-formula__line es-formula__line--4">
-              </div>
+        <div class="es-slider__group">
+          <img src="./images/mobile-cross.png"
+               alt=""
+               class="es-slider__group-image">
+          <div class="es-slider__group-container">
+            <div class="es-slider__group-item">
+              <img src="./images/mobile-cross-1.png"
+                   alt=""
+                   class="es-slider__group-item-img">
+              <p class="es-slider__group-item-title">
+                Serum<br>
+                na dzień</p>
+              <a href="#1"
+                 target="_blank">
+                <div class="es-slider__button es-slider__button--mobile">Sprawdź</div>
+              </a>
             </div>
 
-            <div class="es-desktop">
-
-              <div class="es-formula__item es-formula__item--1">
-                <p class="es-formula__item--title">KWAS SALICYLOWY</p>
-                <p class="es-formula__item--text">Delikatnie złuszcza i&nbsp;wygładza skórę</p>
-                <div class="es-formula__item--line"></div>
-              </div>
-
-              <div class="es-formula__item es-formula__item--2">
-                <div class="es-formula__item--line"></div>
-                <p class="es-formula__item--title">NIACYNAMID</p>
-                <p class="es-formula__item--text">Kojący składnik aktywny,<br>który wyrównuje<br>koloryt skóry.</p>
-              </div>
-
-              <div class="es-formula__item es-formula__item--3">
-                <div class="es-formula__item--line"></div>
-                <p class="es-formula__item--title">MELASYL™</p>
-                <p class="es-formula__item--text">Nowa opatentowana substancja <br>aktywna,&nbsp;która redukuje nadmiar
-                  melaniny&nbsp;powodującej przebarwienia. Nadaje&nbsp;formule żółty odcień,<br> który nie przenosi się
-                  na
-                  skórę.</p>
-              </div>
-
-              <div class="es-formula__item es-formula__item--4">
-                <div class="es-formula__item--line"></div>
-                <p class="es-formula__item--title">WITAMINA C*</p>
-                <p class="es-formula__item--text">Pozyskiwany biotechnologicznie, silny&nbsp;antyoksydant,
-                  który&nbsp;rozświetla skórę.</p>
-              </div>
-
+            <div class="es-slider__group-item">
+              <img src="./images/mobile-cross-2.png"
+                   alt=""
+                   class="es-slider__group-item-img">
+              <p class="es-slider__group-item-title">
+                Serum<br>
+                na noc</p>
+              <a href="#2"
+                 target="_blank">
+                <div class="es-slider__button es-slider__button--mobile">Sprawdź</div>
+              </a>
             </div>
 
+            <div class="es-slider__group-item">
+              <img src="./images/mobile-cross-3.png"
+                   alt=""
+                   class="es-slider__group-item-img">
+              <p class="es-slider__group-item-title">
+                Krem-<br>
+                sorbet</p>
+              <a href="#3"
+                 target="_blank">
+                <div class="es-slider__button es-slider__button--mobile">Sprawdź</div>
+              </a>
+            </div>
+
+            <div class="es-slider__group-item">
+              <img src="./images/mobile-cross-4.png"
+                   alt=""
+                   class="es-slider__group-item-img">
+              <p class="es-slider__group-item-title">
+                Wonder<br>
+                Tint</p>
+              <a href="#4"
+                 target="_blank">
+                <div class="es-slider__button es-slider__button--mobile">Sprawdź</div>
+              </a>
+            </div>
           </div>
         </div>
-      </div> -->
+      </div>
 
-      <!-- <div class="es-ingr es-ingr--collapsed">
-        <button class="es-ingr__menu es-ingr--collapsed">
-          <p class="es-ingr__hide">ROZWIŃ</p>
-          <img src="./images/up.png"
-               class="es-ingr__up"
-               alt="">
-        </button>
-
-        <div class="es-ingr__content">
-          <div class="es-ingr__item">
-            <p class="es-ingr__title">MELASYL™</p>
-            <p class="es-ingr__text">
-              Nowa opatentowana substancja aktywna, która redukuje nadmiar
-              melaniny powodującej przebarwienia. Nadaje formule żółty odcień,
-              który nie przenosi się na skórę.
-            </p>
-          </div>
-          <div class="es-ingr__item">
-            <p class="es-ingr__title">WITAMINA C*</p>
-            <p class="es-ingr__text">
-              Pozyskiwany biotechnologicznie, silny antyoksydant, który
-              rozświetla skórę.
-            </p>
-          </div>
-          <div class="es-ingr__item">
-            <p class="es-ingr__title">NIACYNAMID</p>
-            <p class="es-ingr__text">
-              Kojący składnik aktywny, który wyrównuje koloryt skóry.
-            </p>
-          </div>
-          <div class="es-ingr__item">
-            <p class="es-ingr__title">KWAS SALICYLOWY</p>
-            <p class="es-ingr__text">Delikatnie złuszcza i wygładza skórę.</p>
-          </div>
-        </div>
-      </div> -->
-
-      <!-- <div class="es-htu">
-        <p class="es-section-title es-section-title--big">
-          Sposób <span class="es-section-title--highlight">użycia</span>
-        </p>
-
-        <div class="es-htu__wrapper">
-
-          <div class="es-htu__background"
-               style="background: url(./images/woman-htu.png); background-size: contain; background-position: right; background-repeat: no-repeat;">
-
-            <div class="es-htu__desktop es-htu__pack">
-              <img src="./images/packshot-d.png">
-            </div>
-
-            <div class="es-htu__flex">
-              <div class="es-htu__item">
-                <div class="es-htu__subitem">
-                  <span class="es-htu__number">1 </span>
-                  <div class="es-htu__line"></div>
-                </div>
-                <p class="es-htu__text">
-                  Zaaplikuj 3-4 krople na&nbsp;oczyszczoną skórę <br>twarzy i&nbsp;szyi.
-                </p>
-              </div>
-              <div class="es-htu__item">
-                <div class="es-htu__subitem">
-                  <span class="es-htu__number">2 </span>
-                  <div class="es-htu__line"></div>
-                </div>
-                <p class="es-htu__text">
-                  Nałóż krem z&nbsp;filtrem&nbsp;UV, aby&nbsp;skuteczniej walczyć z&nbsp;przebarwieniami.
-                </p>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div> -->
-
-      <div class="es-slider">
-        <p class="es-section-title es-section-title--big">
-          <span class="es-section-title--highlight">Stwórz swoją rutynę pielęgnacyjną</span>
-        </p>
-
+      <div class="es-slider es-slider--desktop">
         <div class="es-slider__bg"></div>
-
+        <p class="es-section-title es-section-title--big es-slider__title--desktop">
+          <span class="es-section-title--highlight es-slider__title">Stwórz swoją rutynę pielęgnacyjną</span>
+        </p>
         <div class="es-slider__wrapper">
 
           <div class="es-slider__content">
-            <div class="swiper es-swiper">
-              <div class="swiper-wrapper">
+            <div class="swiper-wrapper">
 
-                <div class="swiper-slide es-swiper-slide">
-                  <div class="es-slider__slide">
-                    <div class="es-slider__imgbut">
-                      <a href="#1"
-                         target="_blank">
-                        <img src="./images/cross-1.png"
-                             alt=""
-                             class="es-slider__img">
-                        <p class="es-slider__name">Serum na dzień</p>
-                        <div class="es-slider__button">Sprawdź</div>
-                      </a>
-                    </div>
+              <div class="swiper-slide es-swiper-slide">
+                <div class="es-slider__slide">
+                  <div class="es-slider__imgbut">
+                    <a href="#1"
+                       target="_blank">
+                      <img src="./images/cross-1.png"
+                           alt=""
+                           class="es-slider__img">
+                      <p class="es-slider__name">Serum na dzień</p>
+                      <div class="es-slider__button">Sprawdź</div>
+                    </a>
                   </div>
                 </div>
+              </div>
 
-                <div class="swiper-slide es-swiper-slide">
-                  <div class="es-slider__slide">
-                    <div class="es-slider__imgbut">
-                      <a href="#2"
-                         target="_blank">
-                        <img src="./images/cross-2.png"
-                             alt=""
-                             class="es-slider__img">
-                        <p class="es-slider__name">Serum na noc<br></p>
-                        <div class="es-slider__button">Sprawdź</div>
-                      </a>
-                    </div>
+              <div class="swiper-slide es-swiper-slide">
+                <div class="es-slider__slide">
+                  <div class="es-slider__imgbut">
+                    <a href="#2"
+                       target="_blank">
+                      <img src="./images/cross-2.png"
+                           alt=""
+                           class="es-slider__img">
+                      <p class="es-slider__name">Serum na noc<br></p>
+                      <div class="es-slider__button">Sprawdź</div>
+                    </a>
                   </div>
                 </div>
+              </div>
 
-                <div class="swiper-slide es-swiper-slide">
-                  <div class="es-slider__slide">
-                    <div class="es-slider__imgbut">
-                      <a href="#3"
-                         target="_blank">
-                        <img src="./images/cross-3.png"
-                             alt=""
-                             class="es-slider__img">
-                        <p class="es-slider__name">Krem-sorbet</p>
-                        <div class="es-slider__button">Sprawdź</div>
-                      </a>
-                    </div>
+              <div class="swiper-slide es-swiper-slide">
+                <div class="es-slider__slide">
+                  <div class="es-slider__imgbut">
+                    <a href="#3"
+                       target="_blank">
+                      <img src="./images/cross-3.png"
+                           alt=""
+                           class="es-slider__img">
+                      <p class="es-slider__name">Krem-sorbet</p>
+                      <div class="es-slider__button">Sprawdź</div>
+                    </a>
                   </div>
                 </div>
+              </div>
 
-                <div class="swiper-slide es-swiper-slide">
-                  <div class="es-slider__slide">
-                    <div class="es-slider__imgbut">
-                      <a href="#4"
-                         target="_blank">
-                        <img src="./images/cross-4.png"
-                             alt=""
-                             class="es-slider__img">
-                        <p class="es-slider__name">Wonder Tint</p>
-                        <div class="es-slider__button">Sprawdź</div>
-                      </a>
-                    </div>
+              <div class="swiper-slide es-swiper-slide">
+                <div class="es-slider__slide">
+                  <div class="es-slider__imgbut">
+                    <a href="#4"
+                       target="_blank">
+                      <img src="./images/cross-4.png"
+                           alt=""
+                           class="es-slider__img">
+                      <p class="es-slider__name">Wonder Tint</p>
+                      <div class="es-slider__button">Sprawdź</div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -486,8 +464,6 @@
              class="es-logos__img es-logos__img--vegan">
       </div>
     </div>
-    <!-- <script src="./scripts/slider.js"></script> -->
-    <!-- <script src="./scripts/script.js"></script> -->
   </body>
 
 </html>
