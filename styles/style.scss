@@ -1026,6 +1026,10 @@ $es-black: #000;
     }
 
     .es-benefits {
+      &__desktop {
+        margin-top: -100px;
+      }
+
       .es-section-title--highlight {
         font-size: 27px;
       }

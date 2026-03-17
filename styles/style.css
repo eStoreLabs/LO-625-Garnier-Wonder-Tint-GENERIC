@@ -787,6 +787,9 @@
   #es-rc.es-rc-content .es-effects__icon {
     width: 50px;
   }
+  #es-rc.es-rc-content .es-benefits__desktop {
+    margin-top: -100px;
+  }
   #es-rc.es-rc-content .es-benefits .es-section-title--highlight {
     font-size: 27px;
   }
