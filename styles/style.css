@@ -137,7 +137,7 @@
 }
 #es-rc.es-rc-content .es-benefits__list--desktop {
   position: absolute;
-  top: 60%;
+  top: 63%;
   left: 10%;
   transform: translate(-10%, -50%);
 }
@@ -699,7 +699,10 @@
     min-height: 365px;
   }
   #es-rc.es-rc-content .es-benefits__list--desktop {
-    left: 6%;
+    left: 6.3%;
+  }
+  #es-rc.es-rc-content .es-benefits__list-item::marker {
+    font-size: 17px;
   }
   #es-rc.es-rc-content .es-ba__left-group-title {
     font-size: 15px;

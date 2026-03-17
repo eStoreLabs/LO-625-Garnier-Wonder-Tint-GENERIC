@@ -179,7 +179,7 @@ $es-black: #000;
 
       &--desktop {
         position: absolute;
-        top: 60%;
+        top: 63%;
         left: 10%;
         transform: translate(-10%, -50%);
       }
@@ -891,7 +891,13 @@ $es-black: #000;
 
       &__list {
         &--desktop {
-          left: 6%;
+          left: 6.3%;
+        }
+      }
+
+      &__list-item {
+        &::marker {
+          font-size: 17px;
         }
       }
     }
