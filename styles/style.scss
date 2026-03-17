@@ -95,18 +95,33 @@ $es-black: #000;
     flex-wrap: nowrap;
     gap: 5px;
 
+    &__photo-1-group--mobile {
+      position: relative;
+    }
+
+    &__photo-1-group {
+      &--desktop {
+        display: none;
+      }
+    }
+
     &__title {
+      width: 140px;
+      padding-top: 5px;
+      padding-bottom: 5px;
       position: absolute;
-      bottom: 0;
-      left: 6px;
-      @include text;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
       text-transform: uppercase;
       color: #000;
-      padding: 5px 0;
       text-align: center;
       font-size: 9px;
       font-weight: 700;
       z-index: 4;
+      color: $es-orange;
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid $es-black;
     }
 
     &__photo {
@@ -270,7 +285,8 @@ $es-black: #000;
     &__mobile-images {
       &--left {
         position: absolute;
-        top: 35%;
+        top: 38%;
+        left: -10px;
       }
     }
 
@@ -520,8 +536,7 @@ $es-black: #000;
     }
 
     &__right {
-      padding-top: 25px;
-      padding-bottom: 25px;
+      padding: 25px 5px;
       text-align: center;
       color: $es-orange;
       font-weight: 700;
@@ -588,6 +603,7 @@ $es-black: #000;
     &__wrapper {
       padding-top: 20px;
       padding-bottom: 10px;
+      padding-left: 10px;
     }
 
     &__title {
@@ -597,7 +613,7 @@ $es-black: #000;
     &__item {
       display: flex;
       flex-direction: column;
-      align-items: center;
+      align-items: flex-start;
       padding: 17px 0 0 0;
 
       &:hover {
@@ -646,7 +662,7 @@ $es-black: #000;
     }
 
     &__icon {
-      margin-left: 15px;
+      margin-left: 0px;
     }
 
     &__container {
@@ -779,6 +795,24 @@ $es-black: #000;
     &__title-group {
       display: flex;
       align-items: center;
+      justify-self: center;
+      column-gap: 15px;
+      padding: 10px 15px;
+      background: rgba(255, 255, 255, 0.8);
+      border: 1px solid $es-black;
+      color: $es-orange;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    &__title {
+      &--big {
+        font-size: 60px;
+      }
+
+      &--second {
+        font-size: 20px;
+      }
     }
 
     &__container {
@@ -787,8 +821,12 @@ $es-black: #000;
 
     &__desktop-wrapper {
       position: absolute;
-      top: 1%;
-      left: 1%;
+      top: 10%;
+      left: 5%;
+      display: flex;
+      row-gap: 5px;
+      flex-direction: column;
+      align-items: flex-start;
     }
 
     &__background {
@@ -879,8 +917,8 @@ $es-black: #000;
     &__title {
       text-transform: uppercase;
       font-size: 20px;
-      margin-top: 10px;
-      margin-block: revert;
+      margin-top: 0px;
+      margin-block: 0;
       padding-top: 30px;
       padding-bottom: 20px;
     }
@@ -917,7 +955,7 @@ $es-black: #000;
 
     &__name {
       width: 100%;
-      @include text;
+
       padding: 20px 0;
       text-align: center;
       color: $es-black;
@@ -1239,57 +1277,12 @@ $es-black: #000;
     }
   }
 
-  @media screen and (min-width: 500px) {
-    .es-kv {
-      padding-top: 75px;
+  @media screen and (min-width: 450px) {
 
-      &__title {
-        bottom: 10px;
-        left: 10px;
-        padding: 5px 15px;
-        font-size: 14px;
+    .es-benefits {
+      &__mobile {
+        margin-top: -90px;
       }
-    }
-
-    .es-kv {
-      padding-top: 65px;
-      flex-direction: row;
-
-      &__photoimg {
-        &--mobile {
-          display: none;
-        }
-
-        &--desktop {
-          display: block;
-        }
-      }
-
-      &__logo {
-        width: 30%;
-      }
-
-      &__photo {
-        &--1 {
-          order: 1;
-        }
-
-        &--2 {
-          order: 2;
-        }
-      }
-    }
-
-    .es-garnier-logos {
-      display: none;
-    }
-
-    .es-slider--mobile {
-      display: none;
-    }
-
-    .es-slider--desktop {
-      display: block;
     }
 
     .es-ingredients {
@@ -1302,6 +1295,73 @@ $es-black: #000;
           display: block;
           min-height: 250px;
         }
+      }
+    }
+
+    @media screen and (min-width: 500px) {
+      .es-kv {
+        padding-top: 75px;
+
+        &__title {
+          width: 85%;
+          bottom: 10px;
+          padding: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+          font-size: 15px;
+          border: none;
+        }
+      }
+
+      .es-kv {
+        padding-top: 65px;
+        flex-direction: row;
+
+        &__photo-1-group {
+          &--mobile {
+            display: none;
+          }
+
+          &--desktop {
+            display: block;
+          }
+        }
+
+        &__photoimg {
+          &--mobile {
+            display: none;
+          }
+
+          &--desktop {
+            display: block;
+          }
+        }
+
+        &__logo {
+          width: 30%;
+        }
+
+        &__photo {
+          &--1 {
+            order: 1;
+          }
+
+          &--2 {
+            order: 2;
+          }
+        }
+      }
+
+      .es-garnier-logos {
+        display: none;
+      }
+
+      .es-slider--mobile {
+        display: none;
+      }
+
+      .es-slider--desktop {
+        display: block;
       }
 
       .es-effects {
@@ -1401,7 +1461,7 @@ $es-black: #000;
         display: block;
         position: relative;
         min-height: 300px;
-        margin-top: -95px;
+        margin-top: -91px;
 
         &-title-wrapper {
           background-color: $es-white;
@@ -1508,6 +1568,7 @@ $es-black: #000;
     }
 
     .es-ba {
+      margin-bottom: 5px;
       flex-direction: row;
       justify-content: center;
       align-items: center;
@@ -1515,7 +1576,8 @@ $es-black: #000;
       background: linear-gradient(184deg, rgba(255, 252, 177, 1) 0%, rgba(255, 241, 102, 1) 98%);
 
       &__left-group-title {
-        font-size: 16px;
+        font-size: 13px;
+        bottom: 15px;
       }
     }
   }
@@ -1580,6 +1642,21 @@ $es-black: #000;
       &__wrapper {
         margin-left: 5%;
         max-width: 52%;
+      }
+
+      &__item {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+      }
+
+      &__icon {
+        width: 35px;
+      }
+
+      &__desc {
+        margin-top: 0;
+        font-weight: 700;
       }
 
       &__ba {
